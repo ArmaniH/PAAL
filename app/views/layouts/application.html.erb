@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PAAL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500' rel='stylesheet' type='text/css'>
+  <link href="assets/stylesheets/main.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="home" class="navbar navbar-default move-me ">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="#">
+                  <img src="assets/img/logo.png" class="navbar-brand-logo " alt="">
+              </a>
+          </div>
+          <div class="navbar-collapse collapse ">
+              <ul class="nav navbar-nav navbar-right">
+
+                  <li class="dropdown">
+                      <a href="#home">HOME <i class="fa fa-bars"></i>
+                          <span>Introduction</span>
+
+                      </a>
+
+                  </li>
+                  <li class="dropdown">
+                      <a href="#about">ABOUT <i class="fa fa-bars"></i>
+                          <span>Who We Are?</span>
+
+                      </a>
+
+                  </li>
+
+
+
+                  <li class="dropdown">
+                      <a href="#impact">IMPACT  <i class="fa fa-bars"></i>
+                          <span>What We Done ?</span>
+                      </a>
+
+                  </li>
+                  <li class="dropdown">
+                      <a href="#recent-events">EVENTS<i class="fa fa-bars"></i>
+                          <span>Recent Events</span>
+                      </a>
+
+                  </li>
+                  <li class="dropdown">
+                      <a href="#contact">CONTACT <i class="fa fa-bars"></i>
+                          <span>Reach us Here</span>
+                      </a>
+
+                  </li>
+              </ul>
+          </div>
+
+      </div>
+  </div>
+
+
+<%= yield %>
+
+</body>
+</html>
